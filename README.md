@@ -1,8 +1,8 @@
 Create project:
-#1. Lerna:
+#Lerna:
 
 
-#2. Create NextJS:
+#Create NextJS:
 ```bash
 npx create-next-app frontend-nextjs --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
 
