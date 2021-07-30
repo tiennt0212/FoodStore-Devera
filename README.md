@@ -1,8 +1,8 @@
 Create project:
-#Lerna:
+# 1. Lerna:
 
 
-#Create NextJS:
+# 2. Create NextJS:
 ```bash
 npx create-next-app frontend-nextjs --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
 
@@ -25,7 +25,7 @@ We suggest that you begin by typing:
 ```
 
 
-#3. Create Strapi:
+# 3. Create Strapi:
 ```bash
 npx create-strapi-app backend-strapi
 npx: installed 143 in 8.603s
