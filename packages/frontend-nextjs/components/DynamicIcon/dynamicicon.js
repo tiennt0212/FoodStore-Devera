@@ -7,7 +7,12 @@ import Face from "@material-ui/icons/Face"
 import HelpOutline from "@material-ui/icons/HelpOutline"
 import Settings from "@material-ui/icons/Settings"
 import SearchIcon from '@material-ui/icons/Search'
+/*
 
+To import Icon, you can search your desired icon
+at: https://material-ui.com/components/material-icons/
+
+*/
 const DynamicIcon = (props) => {
     const { iconName } = props
     let Icon = null
