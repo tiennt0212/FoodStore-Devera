@@ -7,12 +7,12 @@ import Face from "@material-ui/icons/Face"
 import HelpOutline from "@material-ui/icons/HelpOutline"
 import Settings from "@material-ui/icons/Settings"
 import SearchIcon from '@material-ui/icons/Search'
-/*
-
+import PaymentIcon from '@material-ui/icons/Payment';
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+/*===========================================================
 To import Icon, you can search your desired icon
 at: https://material-ui.com/components/material-icons/
-
-*/
+===========================================================*/
 const DynamicIcon = (props) => {
     const { iconName } = props
     let Icon = null
@@ -31,6 +31,12 @@ const DynamicIcon = (props) => {
             break;
         case 'search':
             Icon = SearchIcon;
+            break;
+        case 'creditcard':
+            Icon = PaymentIcon;
+            break;
+        case 'wallet':
+            Icon = AccountBalanceWalletIcon;
             break;
         default:
             Icon = HelpOutline;
