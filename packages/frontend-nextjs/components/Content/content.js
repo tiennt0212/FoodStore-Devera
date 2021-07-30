@@ -7,7 +7,12 @@ export const Content = (props) => {
     const { icon, text, selected } = props;
     return (
         <button type="button" className="content">
-            <DynamicIcon iconName={icon} className='icon'></DynamicIcon>
+            {selected && 
+            <div className="check-circle">
+                <DynamicIcon iconName='checkcirclesharp' size="small"></DynamicIcon>
+            </div>
+            }
+            <DynamicIcon iconName={icon} className='icon' size="large"></DynamicIcon>
             <div className='text'>
                 {text}
             </div>
@@ -15,12 +20,14 @@ export const Content = (props) => {
     );
 }
 
-Content.PropTypes = {
+Content.propTypes = {
     icon: PropTypes.string,
     text: PropTypes.string.isRequired,
+    selected: PropTypes.bool.isRequired,
 }
 
 Content.defaultProps = {
     icon: '',
     text: 'Unknown',
+    selected: true,
 }

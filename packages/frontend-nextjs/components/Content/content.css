@@ -1,4 +1,5 @@
 .content {
+    position: relative;
     display: inline-block;
     width: auto;
     border-radius: 8px;
@@ -12,4 +13,12 @@
 
 .text {
     padding-top:4px;
+}
+
+.check-circle {
+    color: var(--primary-color);
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 10px;
 }
