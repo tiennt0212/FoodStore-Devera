@@ -8,7 +8,20 @@ export default{
 
 const Template = (args) => <DynamicIcon {...args}/>;
 
-export const IconHome = Template.bind({});
-IconHome.args={
+export const SmallHome = Template.bind({});
+SmallHome.args={
     iconName: 'home',
+    size: 'small',
+}
+
+export const MediumHome = Template.bind({});
+MediumHome.args={
+    iconName: 'home',
+    size: 'medium',
+}
+
+export const LargeHome = Template.bind({});
+LargeHome.args={
+    iconName: 'home',
+    size: 'large',
 }
