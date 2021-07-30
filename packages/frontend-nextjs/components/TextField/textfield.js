@@ -5,35 +5,23 @@ import DynamicIcon from '../DynamicIcon/dynamicicon'
 
 export const TextField = (props) => {
     const { icon, placeholder, text } = props;
-
-    if (!icon) {
-        return (
-            <div className="box">
-                <input
-                    type="text"
-                    className="textfield"
-                    placeholder={placeholder}
-                    defaultValue={text}
-                />
+    return (
+        <div className="box">
+            <div>
+                {icon &&
+                    <div className="icon">
+                        <DynamicIcon iconName={icon}></DynamicIcon>
+                    </div>
+                }
             </div>
-        )
-    }
-    else {
-        return (
-            <div className="box">
-                <div className="icon">
-                    <DynamicIcon iconName={icon}></DynamicIcon>
-                </div>
-                <span></span>
-                <input
-                    type="text"
-                    className="textfield"
-                    placeholder={placeholder}
-                    defaultValue={text}
-                />
-            </div>
-        )
-    }
+            <input
+                type="text"
+                className="textfield"
+                placeholder={placeholder}
+                defaultValue={text}
+            />
+        </div>
+    )
 }
 
 TextField.PropTypes = {
