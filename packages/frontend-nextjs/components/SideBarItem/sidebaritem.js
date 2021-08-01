@@ -1,29 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import DynamicIcon from '../DynamicIcon/dynamicicon'
 import './sidebaritem.css'
 
 const ItemSideBar = (props) => {
-    const { name } = props;
+    const { iconName } = props;
+    const [selected, changeState] = useState(false);
     return (
-        <div className="item">
-            <div className="class1">
-                <div className="curve-top"></div>
-                <div className="class2">
-                    <DynamicIcon iconName={name} className="icon"></DynamicIcon>
-                </div>
-                <div className="curve-bot"></div>
+        <div className={selected ? 'item item-gray' : 'item item-dark'}
+            onClick={() => changeState(!selected)}
+        >
+            <div className="square curve-top"></div>
+            <div className={selected ? 'inner item-selected' : 'inner item-unselected'}>
+                <DynamicIcon iconName={iconName} size='large'></DynamicIcon>
             </div>
+            <div className="square curve-bot"></div>
         </div>
     )
 }
 
 ItemSideBar.propTypes = {
-    name: PropTypes.string,
+    iconName: PropTypes.string,
 }
 
 ItemSideBar.defaultProps = {
-    name: 'home'
+    iconName: 'home'
 }
 
 export default ItemSideBar;

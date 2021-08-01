@@ -11,37 +11,58 @@
   --purpil: #9288e0;
 }
 
-.class1 {
+.item {
   position: relative;
   width: 92px;
   height: 80px;
   border-radius: 12px 0px 0px 12px;
+}
+
+.item-gray{
+  background-color: var(--gray-dark);
+}
+
+.item-dark{
   background-color: var(--dark);
 }
 
-.class2 {
+.inner{
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   width: 56px;
   height: 56px;
-  left: 12px;
-  top: 13px;
+  left: 13px;
+  top: 12px;
   /* border: 1px solid var(--light); */
   border-radius: 8px;
+}
+
+.item-unselected {
   background-color: var(--dark);
   color: var(--primary-color);
 }
 
-.curve-top {
+.item-selected {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+
+.square {
   position: absolute;
   width: 12px;
   height: 12px;
   background-color: var(--dark);
   right: 0;
+}
+
+.curve-top {
   top: -12px;
-  /* border: 1px solid var(--light); */
+}
+
+.curve-bot {
+  bottom: -12px;
 }
 
 .curve-top::before {
@@ -51,17 +72,8 @@
   height: 12px;
   background-color: var(--light);
   border-radius: 0px 0px 12px 0px;
-  /* border: 1px solid var(--green); */
 }
 
-.curve-bot {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: var(--dark);
-  right: 0;
-  bottom: -12px;
-}
 .curve-bot::before{
   content:'';
   position: absolute;
