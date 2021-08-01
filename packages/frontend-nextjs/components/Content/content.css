@@ -1,16 +1,28 @@
-.content {
+.content-selected {
     position: relative;
     display: inline-block;
     width: auto;
     border-radius: 8px;
     border: 0px;
     background-color: #1F1D2B;
-    color: #ABBBC2;
+    color: var(--light); /* Different from content-unselected*/
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     padding: 12px;
 }
 
+.content-unselected{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #1F1D2B;
+    color: var(--gray-light); /* Different from content-selected*/
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 12px;
+}
 .text {
     padding-top:4px;
 }
