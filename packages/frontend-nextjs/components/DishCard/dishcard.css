@@ -1,0 +1,51 @@
+.dish-card {
+    width: 192px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.dish-card > .food-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+}
+
+.dish-card > .background {
+    background-color: var(--dark);
+    width: 192px;
+    height: 226px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.dish-card > .background > .food-info {
+    color: var(--light);
+    font-size: 14px;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.dish-card > .background > .food-info > .food-name {
+    font-weight: 500;
+}
+
+.dish-card > .background > .food-info > .food-quantity {
+    font-weight: 400;
+    color: var(--gray-light)
+}
+
