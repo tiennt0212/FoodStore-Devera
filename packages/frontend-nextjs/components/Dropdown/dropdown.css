@@ -1,0 +1,16 @@
+.dropdown {
+    width: 100px;
+    height: 48px;
+    background-color: var(--dark);
+    border: 1px solid var(--gray-dark);
+    border-radius: 8px;
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 10px;
+}

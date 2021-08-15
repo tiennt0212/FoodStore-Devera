@@ -1,13 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
-import './dishcard.css';
+// import './dishcard.css';
 import unknown from '../../../../data-images/unknown.png';
-
-export const DishCard = (props) => {
+const DishCard = (props) => {
     const { imgPath, name, price, quantity } = props;
     return (
         <div className='dish-card'>
-            <img src={imgPath} alt='Unknown Food' className='food-image' />
+            <Image src={imgPath} width={140} height={140} className='food-image'/>
             <div className='background'>
                 <div className='food-info'>
                     <div className='food-name'>{name}</div>
@@ -15,7 +15,6 @@ export const DishCard = (props) => {
                     <div className='food-quantity'>{quantity} available</div>
                 </div>
             </div>
-
         </div>
     )
 }
@@ -29,7 +28,9 @@ DishCard.propTypes = {
 
 DishCard.defaultProps = {
     imgPath: unknown,
-    name: 'Mixed Salads',
+    name: 'Default Card',
     price: 123456789,
     quantity: 123,
 }
+
+export default DishCard;

@@ -1,0 +1,13 @@
+.sidebar{
+    width: 92px;
+    height: 100vh;
+    background-color: var(--dark);
+    padding: 1px 0px 8px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 24px 0px 24px 0px;
+}

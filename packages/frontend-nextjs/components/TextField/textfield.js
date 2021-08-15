@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './textfield.css'
+// import './textfield.css'
 import DynamicIcon from '../DynamicIcon/dynamicicon'
 
-export const TextField = (props) => {
+const TextField = (props) => {
     const { icon, placeholder, text } = props;
     return (
-        <div className="box">
+        <div className="text-field">
             <div>
                 {icon &&
                     <div className="icon">
@@ -15,8 +15,6 @@ export const TextField = (props) => {
                 }
             </div>
             <input
-                type="text"
-                className="textfield"
                 placeholder={placeholder}
                 defaultValue={text}
             />
@@ -24,7 +22,7 @@ export const TextField = (props) => {
     )
 }
 
-TextField.PropTypes = {
+TextField.propTypes = {
     icon: PropTypes.string,
     placeholder: PropTypes.string,
     text: PropTypes.string,
@@ -34,3 +32,5 @@ TextField.defaultProps = {
     placeholder: "This is PlaceHolder",
     text: null,
 }
+
+export default TextField;

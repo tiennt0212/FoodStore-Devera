@@ -1,0 +1,126 @@
+main {
+    display: flex;
+}
+
+main > .col1 {
+    position: fixed;
+}
+
+main > .col2 {
+    /* background-color: red; */
+    flex-basis: 67%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px
+}
+
+main > .col2 > .row1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+    align-items: center;
+}
+
+main > .col2 > .row2 {
+    padding: 0px 24px 0px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > .col2 > .row2 > .items {
+    display:flex;
+    justify-content: space-between;
+}
+
+main > .col2 > .row2 > .line {
+    height:2px;
+    width: 100%;
+    background-color: var(--gray-light);
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+}
+
+main > .col2 > .row3 {
+    margin: 24px;
+}
+
+main > .col2 > .row3 > .category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > .col2 > .row3 > .dynamic-food-list{
+    margin-top: 10px;
+}
+
+main > .col3 {
+    background-color:var(--dark);
+    flex-basis: 33%;
+    color: var(--light);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main > .col3 > .row1 > .services {
+    display: flex;
+    margin: 12px 0px 12px 0px;
+
+}
+
+main > .col3 > .row1 > .services > Button {
+    margin-right: 8px;
+}
+
+main > .col3 > .row2 > .table-title {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+main > .col3 > .row2 > .table-title > .col1 {
+    display: flex;
+    flex-basis: 75%;
+    justify-content: space-between;
+    margin: 0px 12px 0px 12px
+}
+
+main > .col3 > .row2 > .table-title > .col2 {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+main > .col3 > .row2 > .line {
+    height: 2px;
+    background-color: var(--gray-light);
+    margin-bottom: 12px;
+}
+
+main > .col3 > .row3 > .orders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > .col3 > .row3 > .orders > .order-item{
+    margin: 0px 0px 30px 0px
+}
+
+main > .col3 > .row3 > .summary > .row1{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+main > .col3 > .row3 > .summary > .row2{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+main > .col3 > .row3 > .summary > .row3 > Button{
+    width: 100%;
+    margin-top: 12px;
+}

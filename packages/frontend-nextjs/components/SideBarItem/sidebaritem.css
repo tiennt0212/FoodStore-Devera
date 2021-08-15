@@ -1,21 +1,10 @@
-:root {
-  --primary-color: #ea7c69;
-  --light: #ffffff;
-  --gray-light: #abbbc2;
-  --dark: #1f1d2b;
-  --gray-dark: #252836;
-  --orange: #ffb572;
-  --red: #ff7ca3;
-  --green: #50d1aa;
-  --blue: #65b0f6;
-  --purpil: #9288e0;
-}
-
 .item {
   position: relative;
   width: 92px;
   height: 80px;
   border-radius: 12px 0px 0px 12px;
+  display:flex;
+  flex-direction: column;
 }
 
 .item-gray{
@@ -70,7 +59,7 @@
   position:absolute;
   width: 12px;
   height: 12px;
-  background-color: var(--light);
+  background-color: var(--dark);
   border-radius: 0px 0px 12px 0px;
 }
 
@@ -79,6 +68,14 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  background-color: var(--light);
+  background-color: var(--dark);
   border-radius: 0px 12px 0px 0px;
+}
+
+.curve-bot-selected {
+  background-color: var(--gray-dark);
+}
+
+.curve-top-selected {
+  background-color: var(--gray-dark);
 }

@@ -6,13 +6,8 @@
     align-items: center;
     position: relative;
 }
-
-.dish-card > .food-image {
-    width: 140px;
-    height: 140px;
+.food-image {
     border-radius: 50%;
-    position: absolute;
-    top: 0px;
 }
 
 .dish-card > .background {
@@ -36,12 +31,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
     margin-bottom: 30px;
 }
 
 .dish-card > .background > .food-info > .food-name {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .dish-card > .background > .food-info > .food-quantity {

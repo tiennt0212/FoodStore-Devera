@@ -1,10 +1,14 @@
 import React from 'react';
 import { Welcome } from './test_welcome';
 import { HelloWorld } from './test_no_argument';
+import {FooBar} from './test_state';
 
 export default {
     title: 'TestComponents/Test',
 }
+
+const templateState = (args) => <FooBar {...args}/>;
+export const State1=templateState.bind();
 
 const template1 = (args) => <Welcome {...args}/>; // the first way to set argument
 export const welcome1 = template1.bind();

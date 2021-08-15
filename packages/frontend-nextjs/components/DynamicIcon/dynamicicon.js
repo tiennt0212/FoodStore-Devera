@@ -10,10 +10,14 @@ import SearchIcon from '@material-ui/icons/Search'
 import PaymentIcon from '@material-ui/icons/Payment';
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import CheckCircleSharpIcon from '@material-ui/icons/CheckCircleSharp';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 /*===========================================================
 
-To import Icon, you can search your desired icon
-at: https://material-ui.com/components/material-icons/
+To import Icon, you can search your desired icon at: 
+https://material-ui.com/components/material-icons/
 
 ===========================================================*/
 const DynamicIcon = (props) => {
@@ -44,6 +48,15 @@ const DynamicIcon = (props) => {
         case 'checkcirclesharp':
             Icon = CheckCircleSharpIcon;
             break;
+        case 'arrowdropdown':
+            Icon = KeyboardArrowDownIcon;
+            break;
+        case 'logout':
+            Icon = ExitToAppIcon;
+            break;
+        case 'user':
+            Icon = AccountCircleIcon;
+            break;
         default:
             Icon = HelpOutline;
             break;
@@ -59,7 +72,7 @@ DynamicIcon.propTypes = {
 };
 
 DynamicIcon.defaultProps = {
-    iconName: 'Home',
+    iconName: 'settings',
     size: 'medium',
 };
 

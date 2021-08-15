@@ -1,23 +1,29 @@
-.box{
+.text-field{
     display: inline-flex;
     align-items:center;
-    background-color: black;
-    color: white;
+    background-color: var(--gray-dark);
+    color: var(--light);
     width: 200px;
     border-radius: 8px;
     padding: 14px;
+    display: flex;
+    justify-content: center;
 }
 
-.textfield{
-    background-color: black;
-    color: white;
+input{
+    background-color:transparent;
+    color: var(--light);
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight:300;
-    border: 0px;
+    outline: none;
     width: auto;
-    margin-left: 4px;
+    /* margin-left: 4px; */
+}
+
+input:focus{
+    outline:none;
 }
 
 .icon{
-    color: white;
+    /* color: white; */
 }

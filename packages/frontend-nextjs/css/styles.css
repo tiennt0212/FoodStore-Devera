@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #ea7c69;
+    --light: #ffffff;
+    --gray-light: #abbbc2;
+    --dark: #1f1d2b;
+    --gray-dark: #252836;
+    --orange: #ffb572;
+    --red: #ff7ca3;
+    --green: #50d1aa;
+    --blue: #65b0f6;
+    --purpil: #9288e0;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+.container {
+  background-color: var(--gray-dark);
+  color: var(--light);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: auto;
+  z-index: -10;
+}
+
+h1 {
+  font-size: 28px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+note {
+  font-size: 14px;
+  color: var(--gray-light);
+}
